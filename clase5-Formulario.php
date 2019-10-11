@@ -4,7 +4,7 @@ $username = $_POST['nombre1'];
 $password = $_POST['password1']; 
 $email = $_POST['email1'];
 $nameComplete = $_POST['nombreCompleto1'];
-$encriptarPass = $password_encriptado = password_hash("password", PASSWORD_BCRYPT);
+$encriptarPass = $password_encriptado = password_hash("$password", PASSWORD_BCRYPT);
 $username_trim = trim($username);
 $nameComplete_trim = trim($nameComplete);
 
