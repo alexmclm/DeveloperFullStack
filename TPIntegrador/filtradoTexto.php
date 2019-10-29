@@ -30,7 +30,7 @@ $resultadoConsulta = mysqli_query($conexion,$consulta);
 		</tr>";
 	
 while ($registro = mysqli_fetch_array($resultadoConsulta)){
-
+		$id = $registro['id'];
 		$tarea = $registro['tarea'];
 		$tareaRealizada = $registro['tareaRealizada'];
 		$fechaRealizada = $registro['fechaRealizada'];
@@ -38,6 +38,8 @@ while ($registro = mysqli_fetch_array($resultadoConsulta)){
 		<td> $tarea </td>
 		<td> $tareaRealizada</td>
 		<td> $fechaRealizada</td>
+		<td><a href='listaTareasEditar.php?id=$id'>Editar</a></td>
+		<td><a href ='borrar.php?id=$id'>Borrar</a></td>
 	</tr>" ;
 	echo $tarea;
 }
