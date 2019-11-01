@@ -7,50 +7,61 @@ class Formulario{
 	public $email;
 	public $nombreCompleto;
 
-	public function getUsuario(){
+//EXISTE UN PROGRMA CHETO PARA EVITAR ESTO!
+	//POSTMAN.exe
+//bueno, a esto se supone que debo validar con el php- html
 
-	}
-	public function setUsuario($usuario){
-		$this->usuario = $usuario;
-	}
-
-	public function setPass($email){
-		$this->pass = $pass;
-	}
-	public function getPass(){
-
-	}
-	 public function setEmail($email){
-	 	$this->email = $email;
-	}
-	public function getEmail(){
-
-	}
-	public function setNombreCompleto($nombreCompleto){
-		$this->nombreCompleto = $nombreCompleto;
-	}
-	public function getNombreCompleto(){
-
-	}
+	//esto era para validar
 	public function validar($post){
-		if(empty($usuario)){
-			echo "campo usuario vacio";
-		}
-		if(empty($pass)){
-			echo "campo pass vacio";
-		}
-		if(empty($email)){
-			echo "campo mail vacio";
-		}
-		if(empty($nombreCompleto)){
-			echo "campo nombre completo vacio"
-		}
+		// if(empty($usuario)){
+		// 	echo "campo usuario vacio";
+		// }
+		// if(empty($pass)){
+		// 	echo "campo pass vacio";
+		// }
+		// if(empty($email)){
+		// 	echo "campo mail vacio";
+		// }
+		// if(empty($nombreCompleto)){
+		// 	echo "campo nombre completo vacio";
+		// }
+
+		/*
+			username,password,email
+		*/
+		// 1ra FORMA DE VALIDAR LOS DATOS:
+			if($post["username"] ==""){
+				return false;
+			}	
+		// 2da forma de validar los datos
+			if (empty($post["password"])){
+				return false;
+			}
+			if (empty($post["email"])){
+				return false;
+			}	
+			return true;
+
 	}
 }
 
 
-
-
+ $unUsuario =  new Formulario();
+// $unUsuario->setUsuario("Albertito");
+// $unUsuario->setPass("ahJa");
+// $unUsuario->setEmail("alberitoPresidente@gmail.com");
+// $unUsuario->setNombreCompleto("Albertito Fernandez K");
+// el $_POST va a ser todo el contenido de la variable
+// osea que el parametro $post es $_POST
+if($unUsuario->validar($_POST)){
+	echo "todo ok";
+}
+else{
+	echo "hubo un error a la hora ingresar los datos, por favor revise";
+}
+// echo "<pre>";
+// var_dump($unUsuario);
+// echo "</pre>";
 
 
 
