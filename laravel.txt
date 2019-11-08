@@ -1,0 +1,27 @@
+C:/Users/ALUMNO/AppData/Roaming/Composer -- donde esta guardado los componentes de laravel
+C:\Users\ALUMNO/Folder donde esta guardado el proyecto-- donde esta guardado el proyecto de laravel 
+	dentro de esta carpeta se inicializa el comando - php artisan serve -
+
+y con localhost:8000 , se netra en el navegador
+
+
+** para reiniciar el server se debe poner en la carpeta del proyecto
+php artisan serve
+
+****************** model
+-- bueno luego de hacer el chiche de crear la base de datos
+para abrir un scrip del php , se necesita
+se necesita ir a la app de laravel, de C:\Users\ALUMNO\clase2
+	en el cmd es :php artisan model make:model nombreDelPHP //sin el primer *model* entre artisan y make
+	
+
+*****************controllers
+luego los controladores de la aplicacion para eso se necesita hacer :
+php artisan make:controller estadoController
+
+dentro de la carpeta del proyecto / aoo/https/controllers/ estadoController.php
+de cada "base de datos que haga" ya que estos estaran relacionados uno con otro y se comportaran de diferentes 
+formas
+********** por cada model va cada controller *****************
+
+
