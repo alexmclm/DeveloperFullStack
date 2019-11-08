@@ -1,0 +1,34 @@
+Model -- es la que se conecta con la base de datos
+Controller -- es como el punto de inicio, del codigo
+View -- no se la ve ahora, hoy 8-11
+
+las app webs, tiene lo siguiente:
+	cuando no haya una interaccion con el ususario -sitio, no pasa nada,no se ejecuta nada	
+	cuando un user pide info, pagi, ahi es donde nosotros haciemos es iniciar la app para responder al usuario
+	ese punto de inicio son los Controllers
+debbemos hacer una ruta
+/prueba
+cuando el user ingrese al /prueba, osea una url, esta url ejecuta un metodo un controller en particular, y este controllers
+tal vez use un model en particular, osea que tal vez interactue con la BBDD
+------------------------
+--como crear un model? ---
+en la carpeta del proyecto entrar a la consola:
+	C:\Users\ALUMNO\clase2 
+y escribir - php artisan make:model EstadoDeAnimo
+esto lo que hace es crear un model .php
+y el archivo que creo se ve en app/EstadoDeAnimo.php
+	a este archivo se le hace 2 cambios:
+1) con que BBDD se relaciona
+-----------*-------
+crear un controller?
+C:\Users\ALUMNO\clase2 , abro cmd
+entonces escribo: - php artisan make:controller EstadoDeAnimoController
+	y se vera en app/htpp/Controller/fileController
+
+
+
+------------------------------- se hizo varias boludeces laravel ----------------------
+
+se usara post man para simular un server de la BBDD en la web
+
+
