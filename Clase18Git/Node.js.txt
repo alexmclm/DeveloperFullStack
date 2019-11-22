@@ -1,0 +1,41 @@
+a todo esto instalar el nodeJs y todo lo demas de la calse 17
+
+node Express
+	paquete, framework que se instala sobre nodeJs, al estilo laravel, 
+	y nos facilita el trabajo entre el cliente-servidor, nos facilita para usar el POST ;GET ; PUT ...
+
+
+desarrollador MEAN
+	Mango ->BBDD no relacional
+	Express
+	Angular/React
+	NodeJs
+
+Instalacion::: npm install express --save  .	
+
+1er paso: en una carpeta nuevao del proyecto---------------
+
+el cmd npm init -f , instala el package.js , si hay un error en el archivo de que no instala probar
+	npm init y seguir adelante
+
+e installar el express cmd: npm install express --save, bajara el framework mas la dependencia package-json.json
+
+* y para llevarme el proyecto o subirlo a gitHub , puedo llevarme el package.json y el archivo app
+
+el cacho de codigo en el PowerPoint
+
+iria en el app.js
+	muy parecido a laravel solo que la diferencia esta en que el codigo y las rutas estan en el mismo archivo.js
+
+	app.get('/usuario', function (req, res) {
+	// codigo que se enviara 	
+ 	 res.send('Hola Mundo!');
+	});
+se ve que el REQ puede ser 3 tipos -> Body || ->Params and ->query
+
+el RES es un parametro que se relacionara con el HTTP
+req is an object containing information about the HTTP request that raised the event.
+In response to req, you use res to send back the desired HTTP response.
+
+cualquier cambio sque se haga se debe detener el servidor cntrl + c
+	
