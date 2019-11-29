@@ -1,0 +1,29 @@
+{{!-- del practico2 donde demo mostrar el listado de todos los datos del ejercicio 2--}}
+<h1>Listado de Tareas</h1>
+<br>
+{{!-- existe una funcion parfa poder recorrer todo el listado que es #each --}}
+{{!-- ya que esta funcion each itera cada estado --}}
+{{!-- el each es como el forEach , que toma un elemento y la funcion que se aplicara a esa funcion para que cambie de estado --}}
+<table>
+
+
+		<tr>
+			<th>Titulo</th>
+			<th>Completada</th>
+		</tr>
+
+{{#each listado}}
+{{!--  lo que apunta el THIS es al elemento donde esta apuntado en el momento, osea en el ID1, luego al ID2 , etc --}}
+{{!-- listado.forEach(function(elemento){elemento.nombreDeLaIDDelElemento} ); --}}
+	<tr>
+		<td>{{this.title}} </td> 
+		<td>	
+	{{#if this.completed}}
+		<strong>Completado</strong> 
+	{{/if}}
+		</td>
+	</tr>	
+	{{!-- {{this.completed}}  --}}
+{{/each}}
+
+</table>
