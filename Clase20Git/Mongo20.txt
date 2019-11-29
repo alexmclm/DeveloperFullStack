@@ -1,0 +1,18 @@
+--------------------- MONGO -----------------------------
+base de datos no relacional con NOSQL
+ no hay informacion estructurada
+	se carga informacion dinamica: lo que cargas una vez, puede ser diferente a las demas cargas
+	lo que sea que sea potente como desastrozo, relativo
+
+
+**isntalo mongo! 
+
+creo de nuevo el proyecto
+>npm init -f
+>npm install express --save
+
+
+	cuando tengo instalado mongo, utilizar este comando, y su variable que esta en el pdf de slack
+>npm mongoose --save
+//se debe armar por cada tabla/documento
+armar un esquema y un modelo
