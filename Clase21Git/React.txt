@@ -1,0 +1,41 @@
+-- framework de frontEnd
+	hasta el momento siempre vimos el backend  y estas ultimas clases sera el frontEnd
+--cuando se trababa del lado del cliente, es en base al frontEnd
+	**react
+		esta basado en javaScript
+		relacionado con el HTML
+		"""parecido""" a handlebars 
+	*si uso REACT, no uso el HandleBars, por que handlebars es un biblioteca, un TEMPLATE del lado del servidor, del 	lado backEnd
+	*con el handlebars, es para consultar con el servidor y es el encargado de realizar las funciones que le pido a la base de datos
+	
+	*del lado del ciente: nunca se comunica con el backEnd, en el REACT nunca te vas a comunicar con el servidor
+
+
+
+
+**aprender REACT es una apuesta grande para las multinacionales
+	**explotar este LENGUAJE!!
+	
+----------**componentes** ---------------------
+	se basa en el concepto de componentes, es una porcion de vistas
+	te propone react es que dividas tu pantalla en diferentes componentes y dedicarse a programar cada componente y 
+	luego unir 
+	osea una porcion de componente sea para comentarios, que se mostrara
+	otra porcion sea para ingresar comentarios
+	y otro sea para el logo de la pantalla
+	todo estas porciones compone una APP
+	** por lo general son componentes dinamicos (al menos en IG)
+	Conviene tener fragmentado en muchos "componentes"? => Relativo , ayuda mucho si lo tenes dividido en base a 
+		un posible remodelacion de la APP , ya que te ahorras Re-Escribir codigo para adaptar
+
+el metodo render(){} , siempre esta cuando se trabaja con REACT
+	*Colocar etiqueta grande que abarque todo el codigo
+
+**************Intalacion******************
+1->    >npm install -g create-react-app
+2->    >npx create-react-app <nombre de la app>
+3->    >cd nombreDeLaApp
+4->    >npm start
+ ------> react te crea el package.json , por que se roba parte del node
+
+** los App se guarda en la carpeta SRC

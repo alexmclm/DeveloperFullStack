@@ -1,0 +1,21 @@
+Follio Digital
+	captura del programa
+		mandar links del repo
+	hay aplicaciones en los cuales para hacer Follio digital
+hacer LinkenID
+anotarse con la facultad y pedir 
+	bolsa de trabajo de la utn
+
+-- para la parte de NODEJS 
+	el TP va a ser algo corto
+		*se hara un sistema de noticias, donde todas las personas pueden escribir
+		*tener base de datos en MONGO , para recibir noticias, posteo, una fecha
+				tener un listado para ver las noticias
+				tener un cuadro de texto para escribir las noticias
+			y cuando un usuario ingrese, vea las noticias
+		*crear el servidor
+			poner el express
+			poner el formulario para poner los datos -- handlebars
+			url code , por que necesitamos los datos por formulario
+			y el get-Post para ingresar noticias y mostrar las noticias
+		*insertar el mogoose, con el mongoDB
