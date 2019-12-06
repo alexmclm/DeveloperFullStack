@@ -1,0 +1,70 @@
+tema Principal para esta parte:
+	*react.fragment
+*todo debe estar contenido dentro de un gran <div></div>, por que lo pide el lenguaje, no se puede fragmentar
+aunque no siempre se puede usar, ya que si tenemos una tabla, y lo que necesitas de la tabla esta en otro Componente
+	Ejemplo: 
+		si tenes el Componente1, se abre la tabla
+		<table>
+			<tr>
+				<th> nombre </th>
+				<th> apellido </tH>
+			<tr>
+			<Compoenente2></Componente2>
+		</table>
+
+		y esto es un bochorno por que componente2 tiene informacion, la comunicacion entre los dema scomponete
+		resultara emborroza
+	el div no puede estar metido dentro de una tabla, para cuando tengo que utilizar otro componente, en el mismo
+
+====> para esto se utiliza react.fragment 
+	que "aisla" este Componente2 para que se puede trabajar y poder comunicarse con el Componente1
+*cuando debo mandar algo que esta contenido dentro de un tag de html (dentro de otro componente)
+	debo usarlo
+
+*para caso especiales
+
+		manera de hacerlo
+ render() {
+ return (
+ <React.Fragment>  --------------> //esta parte!
+ <td>Hello</td>
+ <td>World</td>
+ </React.Fragment>
+ );
+ }
+
+ render() {
+ return (
+ <> // ------------------> se transforma en esto!
+ <td>Hello</td>
+ <td>World</td>
+ </>
+ );
+ } 
+---------------------------------------------------------------------------------------------------------
+
+** hay 2 tipos de vias para comunicar entre los ComponentesN 
+	*la comunicacion de padre a hijo, como si fuese herencia
+   *FormaDeComunicacion:
+		<Collapsible title = "Overview" />
+
+	Ejemplo:
+		<PrimerComponente name = "Juancito" />
+	y para invocarlo es : {this.props.name}
+
+------------------------------------------------------------------------
+se puede llamar a muchos componentes, utilizando un solo js
+	entonces desde la App.js
+	<Componente3 titulo = "otro titulo"> </Componente3>.
+
+entonces creo otro componente4 donde le pongo el render(){
+}
+------------------------------------------------------------------------
+que pasa cuando tenemos un monton de componentes en un array?
+	tendre que crear una variable para almacenar los nombres o los datos en una array en esta vector
+		vectorNombres= []
+y al realizar funciones como lo muestra el PDF, pagina 
+en este caso, se realizara las funciones en la app.js
+	vectorNombres ,es la lista de todas las componentes
+y al querer operar en esta lista, lo debo guardar en otra variable
+	vectorRespuesta = []
