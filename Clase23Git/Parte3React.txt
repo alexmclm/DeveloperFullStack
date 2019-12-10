@@ -1,0 +1,23 @@
+Veremos el tema de las fecha 
+	viene de una nueva funcion, tipo clases
+	que es 
+State = {
+	fecha: new Date()
+}
+
+state es un json!
+ => el state funciona con otro metodo , con el .setState 
+caundo yo queiro cambiar el valor de la variable que esta en la clase, que afectara la vista en el navegador...
+	se debe utilizara el this.setState({fecha : NuevoVALOR})
+para el uso de el State se usa los Eventos 
+	ejemplo los botones que le ponemos y apretamos
+	tipo login, aceptar, registrarse ==> nosotros debemos responder a estos eventos nuevos 
+
+---------------> esto solo no alcanza , por que lo que se debe hacer para que funcione es mas codigos
+*ya que redefino el constructor , viene de la clase REACT ==> (por el super viene de la clase padre
+del REACT.Component) pagina penultima
+
+	/****************************
+ciclo de vida, cuando nace y muere los Componentes
+
+ 	************************* axios para conectarse con servidor
